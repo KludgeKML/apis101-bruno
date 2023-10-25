@@ -1,0 +1,21 @@
+meta {
+  name: Get Groups
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/graphql/execute
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+body:json {
+  { "query": "{ groups { name } }" }
+  
+}

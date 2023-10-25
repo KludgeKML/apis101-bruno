@@ -1,0 +1,15 @@
+meta {
+  name: Delete User
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/api/v1/users/3
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  : 
+}

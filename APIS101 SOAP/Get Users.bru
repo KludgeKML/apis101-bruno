@@ -1,0 +1,19 @@
+meta {
+  name: Get Users
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/api/soap/users/action
+  body: xml
+  auth: none
+}
+
+body:xml {
+    <soapenv:Envelope>
+      <soapenv:Body>
+        <get_users></get_users>
+      </soapenv:Body>
+    </soapenv:Envelope>
+}
