@@ -1,0 +1,16 @@
+meta {
+  name: Remove User from Group
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{host}}/api/v1/groups/1/users/3
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
